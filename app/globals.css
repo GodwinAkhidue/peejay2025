@@ -2,20 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: greatvibes;
+  src: url("../public/fonts/Great_Vibes/GreatVibes-Regular.ttf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face {
+  font-family: futurapt;
+  src: url("../public/fonts/Futura/FuturaPTLight.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: futurapt;
+  src: url("../public/fonts/Futura/FuturaPTMedium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: futurapt;
+  src: url("../public/fonts/Futura/FuturaPTBold.otf");
+  font-weight: 700;
+}
+
+.frame {
+  filter: invert(1) brightness(2);
+}
+
+.greatvibes {
+  font-family: greatvibes;
+}
+
+.futurapt {
+  font-family: futurapt;
+}
+
+/* Target navigation buttons */
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  border: 2px solid white;
+  opacity: 0.6;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  opacity: 1;
+}
+
+.custom-prev {
+  left: 10px; /* Adjust position */
+}
+
+.custom-next {
+  right: 10px;
+}
+
+@media (min-width: 1024px) {
+  .custom-next,
+  .custom-prev {
+    font-size: 28px;
+  }
+  .custom-next {
+    right: 30px;
+  }
+  .custom-prev {
+    left: 30px;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.swiper-container .swiper-pagination {
+  margin-bottom: 20px;
+}
+
+/* Target pagination bullets */
+.swiper-container .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.6); /* Custom color */
+  width: 10px; /* Adjust size */
+  height: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: #fff; /* Highlight active bullet */
+  transform: scale(1.2); /* Enlarge active bullet */
 }
