@@ -55,10 +55,12 @@ export default function Header() {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 px-[20px] lg:px-[60px] py-[20px] text-white`}
+      className={`fixed top-0 left-0 w-full z-50 text-white ${
+        scrollTop >= screenHeight ? "p-0" : "px-[20px] lg:px-[60px] py-[20px]"
+      } transition-all duration-300`}
     >
       <div
-        className={`bg-black w-full p-[20px] lg:p-[30px] bg-opacity-20 flex items-center justify-between rounded-[10px]`}
+        className={`bg-black w-full p-[20px] lg:p-[30px] ${scrollTop >= screenHeight ? "bg-opacity-100":"bg-opacity-20 rounded-[10px]"} flex items-center justify-between transition-all duration-300`}
       >
         <div className="greatvibes text-[20px]">
           <Image
@@ -74,8 +76,8 @@ export default function Header() {
         {/*Mobile Nav Start */}
         <div
           className={`fixed lg:static top-0 transition-all duration-300 ${
-            isMenuOpen ? "right-0" : "right-[-360px]"
-          } bg-black lg:bg-transparent w-full max-w-[360px] lg:w-max lg:max-w-full h-[120vh] pb-[20vh] lg:pb-0 lg:h-max flex flex-col items-center justify-center`}
+            isMenuOpen ? "right-0" : "right-[-100vw]"
+          } bg-black lg:bg-transparent w-full lg:w-max h-[120vh] pb-[20vh] lg:pb-0 lg:h-max flex flex-col items-center justify-center`}
         >
           <button
             onClick={() => setIsMenuOpen(false)}

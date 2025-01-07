@@ -46,7 +46,7 @@
   color: white;
   border: none;
   font-size: 24px;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
   z-index: 10;
   border-radius: 50%;
@@ -71,6 +71,7 @@
   .custom-next,
   .custom-prev {
     font-size: 28px;
+    padding: 15px;
   }
   .custom-next {
     right: 30px;
