@@ -3,6 +3,8 @@ import Header from "@/components/header";
 import HeroSection from "@/components/hero";
 import { createRef } from "react";
 import Couple from "@/components/couple";
+import Bridesmaid from "@/components/bridesmaid";
+import GroomsMen from "@/components/groomsmen";
 
 export default function Home() {
   const page = createRef<HTMLDivElement | null>();
@@ -22,8 +24,30 @@ export default function Home() {
             backgroundAttachment: "fixed",
           }}
         >
-          <div className="w-full h-full bg-black bg-opacity-20"></div>
+          <div className="w-full h-full text-white bg-black bg-opacity-20 flex flex-col items-center justify-center px-[20px]">
+            <div className="greatvibes text-[40px] lg:text-[100px]">
+              Our Closest Companions
+            </div>
+            <div className="italic text-center text-[14px] lg:text-[24px] opacity-60 max-w-[500px] lg:max-w-[800px]">
+              Every great love story has its cherished circle — those who stand
+              beside us, laugh with us, and celebrate our journey. Meet the ones
+              who make this moment even more special.
+            </div>
+          </div>
         </div>
+        <GroomsMen />
+        <div
+          className="w-full h-[300px] lg:h-[500px]"
+          style={{
+            backgroundImage: `url(/images/heroimg3.jpg)`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+          }}
+        >
+          <div className="w-full h-full text-white bg-black bg-opacity-20 flex flex-col items-center justify-center px-[20px]"></div>
+        </div>
+        <Bridesmaid />
       </div>
     </div>
   );

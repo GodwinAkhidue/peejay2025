@@ -62,23 +62,23 @@ export default function Timer() {
     <div className="w-full items-center justify-center flex flex-wrap gap-x-[10px] lg:gap-x-[20px]">
       <TimerItem
         timer={timeLeft.months}
-        value={timeLeft.months > 1 ? "Months" : "Month"}
+        value={timeLeft.months == 1 ? "Month" : "Months"}
       />
       <TimerItem
         timer={timeLeft.days}
-        value={timeLeft.days > 1 ? "Days" : "Day"}
+        value={timeLeft.days == 1 ? "Day" : "Days"}
       />
       <TimerItem
         timer={timeLeft.hours}
-        value={timeLeft.hours > 1 ? "Hours" : "Hour"}
+        value={timeLeft.hours == 1 ? "Hour" : "Hours"}
       />
       <TimerItem
         timer={timeLeft.minutes}
-        value={timeLeft.minutes > 1 ? "Minutes" : "Minute"}
+        value={timeLeft.minutes == 1 ? "Minute" : "Minutes"}
       />
       <TimerItem
         timer={timeLeft.seconds}
-        value={timeLeft.seconds > 1 ? "Seconds" : "Second"}
+        value={timeLeft.seconds == 1 ? "Second" : "Seconds"}
       />
     </div>
   );
