@@ -6,6 +6,8 @@ import Couple from "@/components/couple";
 import Bridesmaid from "@/components/bridesmaid";
 import GroomsMen from "@/components/groomsmen";
 import Gift from "@/components/gift";
+import Gallery from "@/components/gallery";
+import Events from "@/components/events";
 
 export default function Home() {
   const page = createRef<HTMLDivElement | null>();
@@ -49,6 +51,26 @@ export default function Home() {
       </div>
       <Bridesmaid />
       <Gift />
+      <Gallery/>
+      <Events/>
+      <div
+        className="w-full h-screen"
+        style={{
+          backgroundImage: `url(/images/heroimg1.jpg)`,
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "top"
+        }}
+      >
+        <div className="w-full h-full text-white bg-black bg-opacity-20 flex flex-col items-center justify-center px-[20px]">
+          <div className="greatvibes text-[40px] lg:text-[100px]">
+            Thank You.
+          </div>
+          <div className="greatvibes text-[40px] lg:text-[100px]">
+            Precious & Jeffery
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

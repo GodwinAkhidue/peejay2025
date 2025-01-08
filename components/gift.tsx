@@ -19,15 +19,15 @@ export default function Gift() {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="w-full h-full text-white bg-black bg-opacity-20 flex flex-col items-center justify-center px-[20px] gap-[20px]">
+      <div className="w-full h-full text-white bg-black bg-opacity-20 flex flex-col items-center justify-center px-[20px] gap-[20px] lg:gap-[30px]">
         <div className="greatvibes text-[40px] lg:text-[100px]">
           Gift The Couple
         </div>
         <button
           onClick={() => setOpenGift(true)}
-          className="bg-[#a88a4d] flex gap-[5px] items-center justify-center w-[120px] h-[50px] futurapt rounded-[10px] shadow-md"
+          className="bg-[#a88a4d] hover:bg-white hover:text-[#a88a4d] transition-all duration-300 flex gap-[5px] lg:gap-[10px] items-center justify-center w-[120px] lg:w-[200px] h-[50px] lg:h-[80px] futurapt rounded-[10px] shadow-md lg:text-[20px]"
         >
-          <IoIosGift className="text-[24px]" />
+          <IoIosGift className="text-[24px] lg:text-[32px]" />
           GIFT
         </button>
       </div>
@@ -58,13 +58,13 @@ function Modal({ i }: { i: any }) {
           i.openGift == true ? "top-0" : "top-[100vh]"
         } transition-all duration-500 px-[20px]`}
       >
-        <div className="bg-white rounded-[10px] w-full shadow-md overflow-hidden">
+        <div className="bg-white rounded-[10px] w-full max-w-[700px] shadow-md overflow-hidden">
           <div className="bg-[#a88a4d] bg-opacity-20 p-[40px] w-full flex flex-col items-center justify-center relative">
             <button
               onClick={() => i.setOpenGift(false)}
               className="absolute top-[20px] right-[20px]"
             >
-              <IoClose className="text-[24px]" />
+              <IoClose className="text-[24px] lg:text-[28px]" />
             </button>
             <div className="greatvibes text-[40px] lg:text-[100px]">
               Gift The Couple

@@ -25,6 +25,11 @@
   font-weight: 700;
 }
 
+.eventframe {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(4%) saturate(4732%)
+    hue-rotate(2deg) brightness(85%) contrast(79%);
+}
+
 html {
   scroll-behavior: smooth;
 }
