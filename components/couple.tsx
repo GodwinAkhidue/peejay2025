@@ -6,7 +6,7 @@ import { IoIosHeart } from "react-icons/io";
 
 export default function Couple() {
   return (
-    <div className="flex items-center justify-center py-[80px] lg:py-[160px] px-[20px] bg-[#a88a4d] bg-opacity-10">
+    <div id="couple" className="flex items-center justify-center py-[80px] lg:py-[160px] px-[20px] bg-[#a88a4d] bg-opacity-10">
       <div className="w-full max-w-[400px] lg:max-w-[800px] flex flex-col items-center justify-center">
         {/*Prop */}
         <div className="h-[1px] w-full max-w-[400px] bg-[#a88a4d] flex items-center justify-center">

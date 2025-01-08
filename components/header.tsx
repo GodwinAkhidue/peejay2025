@@ -45,12 +45,12 @@ export default function Header() {
 
   const navLinks = [
     { name: "HOME", url: "/" },
-    { name: "COUPLE", url: "/" },
-    { name: "STORY", url: "/" },
-    { name: "GALLERY", url: "/" },
-    { name: "BRIDESMAID", url: "/" },
-    { name: "GROOMSMEN", url: "/" },
-    { name: "EVENTS", url: "/" },
+    { name: "COUPLE", url: "/#couple" },
+    { name: "GROOMSMEN", url: "/#groomsmen" },
+    { name: "BRIDESMAID", url: "/#bridesmaid" },
+    { name: "GIFT", url: "/#gift" },
+    { name: "GALLERY", url: "/#gallery" },
+    { name: "EVENTS", url: "/#events" },
   ];
 
   return (

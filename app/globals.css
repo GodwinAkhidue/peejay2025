@@ -25,6 +25,10 @@
   font-weight: 700;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .frame {
   filter: invert(1) brightness(2);
 }
