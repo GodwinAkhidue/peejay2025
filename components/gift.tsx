@@ -37,7 +37,7 @@ export default function Gift() {
 }
 
 function Modal({ i }: { i: any }) {
-  const acctNumber = "1122334455";
+  const acctNumber = "0169700770";
   const [copied, setCopied] = useState(false);
 
   const copy = async () => {
@@ -58,22 +58,22 @@ function Modal({ i }: { i: any }) {
           i.openGift == true ? "top-0" : "top-[100vh]"
         } transition-all duration-500 px-[20px]`}
       >
-        <div className="bg-white rounded-[10px] w-full max-w-[700px] shadow-md overflow-hidden">
+        <div className="bg-white rounded-[10px] w-full max-w-[400px] shadow-md overflow-hidden">
           <div className="bg-[#a88a4d] bg-opacity-20 p-[40px] w-full flex flex-col items-center justify-center relative">
             <button
               onClick={() => i.setOpenGift(false)}
               className="absolute top-[20px] right-[20px]"
             >
-              <IoClose className="text-[24px] lg:text-[28px]" />
+              <IoClose className="text-[24px]" />
             </button>
-            <div className="greatvibes text-[40px] lg:text-[100px]">
+            <div className="greatvibes text-[40px]">
               Gift The Couple
             </div>
-            <div className="futarapt text-[18px] lg:text-[28px] font-bold mt-[5px]">
+            <div className="futarapt text-[18px] font-bold mt-[5px]">
               ACCOUNT DETAILS
             </div>
             <div className="flex items-center gap-[10px] mt-[15px]">
-              <div className="futarapt text-[18px] lg:text-[28px] font-bold">
+              <div className="futarapt text-[18px] font-bold">
                 {acctNumber}
               </div>
               <button
@@ -92,17 +92,17 @@ function Modal({ i }: { i: any }) {
                 )}
               </button>
             </div>
-            <div className="futarapt text-[18px] lg:text-[28px] font-bold mt-[15px]">
-              BANK NAME
+            <div className="futarapt text-[18px] font-bold mt-[15px]">
+              GT BANK
             </div>
-            <div className="futarapt text-[18px] lg:text-[28px] font-bold mt-[15px]">
-              ACCOUNT NAME
+            <div className="futarapt text-[18px] font-bold mt-[15px]">
+              IGBINOBA OSARETIN JEFFREY
             </div>
-            <div className="mt-[15px] text-[14px] italic text-center">
+            <div className="mt-[15px] text-[14px] lg:text-[16px] italic text-center">
               Need to confirm your transaction? Reach out to us on whatsapp
             </div>
             <a
-              href="https://wa.me/0000000000"
+              href="https://wa.me/2348153106868"
               className="mt-[15px] text-[32px] text-[#25d366]"
             >
               <FaSquareWhatsapp />
