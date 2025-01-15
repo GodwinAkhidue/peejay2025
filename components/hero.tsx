@@ -36,7 +36,7 @@ const HeroSlider = () => {
         effect={"fade"}
         fadeEffect={{ crossFade: true }}
         speed={2000}
-        autoplay={{ delay: 8000 }}
+        autoplay={{ delay: 5000 }}
         allowTouchMove={false}
       >
         {slides.map((slide: any, index: any) => (

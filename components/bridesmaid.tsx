@@ -137,7 +137,7 @@ function Bridesmaid2({ i }: { i: any }) {
 function Bridesmaid1Writeup({ i }: { i: any }) {
   return (
     <div
-      className={`fixed top-0 left-0 w-full h-full bg-black z-40 ${
+      className={`fixed top-0 left-0 w-full h-full bg-black z-50 ${
         i.openBridesmaid1 == true
           ? "bg-opacity-50 visible"
           : "bg-opacity-0 invisible"
@@ -225,7 +225,7 @@ function Bridesmaid1Writeup({ i }: { i: any }) {
 function Bridesmaid2Writeup({ i }: { i: any }) {
   return (
     <div
-      className={`fixed top-0 left-0 w-full h-full bg-black z-40 ${
+      className={`fixed top-0 left-0 w-full h-full bg-black z-50 ${
         i.openBridesmaid2 == true
           ? "bg-opacity-50 visible"
           : "bg-opacity-0 invisible"

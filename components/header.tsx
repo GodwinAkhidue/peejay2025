@@ -55,7 +55,7 @@ export default function Header() {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 text-white ${
+      className={`fixed top-0 left-0 w-full z-40 text-white ${
         scrollTop >= screenHeight ? "p-0" : "px-[20px] lg:px-[60px] py-[20px]"
       } transition-all duration-300`}
     >

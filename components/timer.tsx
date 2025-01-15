@@ -22,19 +22,7 @@ export default function Timer() {
     const targetDate = new Date("2025-02-13");
 
     const calculateTimeLeft = () => {
-      const now = new Date();
-
-      // Calculate total months difference
-      let months = (targetDate.getFullYear() - now.getFullYear()) * 12;
-      months += targetDate.getMonth() - now.getMonth();
-
-      if (targetDate < now) months = 0; // Handle past dates gracefully
-
-      // Calculate remaining time
-      const tempDate = new Date(now);
-      tempDate.setMonth(tempDate.getMonth() + months);
-
-      const difference = targetDate.getTime() - tempDate.getTime();
+      const difference = targetDate.getTime() - Date.now();
       const days = Math.floor(difference / (1000 * 60 * 60 * 24));
       const hours = Math.floor(
         (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -43,7 +31,7 @@ export default function Timer() {
       const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
       setTimeLeft({
-        months,
+        months: 0,
         days,
         hours,
         minutes,
