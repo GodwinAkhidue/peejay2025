@@ -12,7 +12,7 @@ export default function Events() {
       <div className="h-[1px] w-full max-w-[400px] bg-[#a88a4d] flex items-center justify-center mt-[50px] lg:mt-[80px]">
         <RiHeart2Fill className="text-[#a88a4d] text-[24px]" />
       </div>
-      <div className="mt-[70px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+      <div className="mt-[70px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[30px]">
         <EventItem Date={"Thursday, 3rd Jul, 2025"} Type={"TRADITIONAL"} Time={"9:00 AM - 2:00 PM"} Venue={"2 Commercial Ave, Off Ikpokpan Road, GRA, Gloria Gardens, Benin City, Edo State."}/>
         <EventItem Date={"Saturday, 5th Jul, 2025"} Type={"CHURCH"} Time={"9:00 AM - 12:00 PM"} Venue={"2 Commercial Ave, Off Ikpokpan Road, GRA, Gloria Gardens, Benin City, Edo State."}/>
         {/* <EventItem /> */}
