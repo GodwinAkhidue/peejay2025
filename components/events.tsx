@@ -21,7 +21,7 @@ export default function Events() {
   );
 }
 
-function EventItem({Date, Type, Time, Venue}) {
+function EventItem({Date , Type, Time, Venue}:any) {
   return (
     <div className="w-[270px] h-[450px] relative flex items-center justify-center">
       <div
