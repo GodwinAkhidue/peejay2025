@@ -13,15 +13,15 @@ export default function Events() {
         <RiHeart2Fill className="text-[#a88a4d] text-[24px]" />
       </div>
       <div className="mt-[70px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
-        <EventItem />
-        <EventItem />
-        <EventItem />
+        <EventItem Date={"Thursday, 3rd Jul, 2025"} Type={"TRADITIONAL"} Time={"9:00 AM - 2:00 PM"} Venue={"2 Commercial Ave, Off Ikpokpan Road, GRA, Gloria Gardens, Benin City, Edo State."}/>
+        <EventItem Date={"Saturday, 5th Jul, 2025"} Type={"CHURCH"} Time={"9:00 AM - 12:00 PM"} Venue={"2 Commercial Ave, Off Ikpokpan Road, GRA, Gloria Gardens, Benin City, Edo State."}/>
+        {/* <EventItem /> */}
       </div>
     </div>
   );
 }
 
-function EventItem() {
+function EventItem({Date, Type, Time, Venue}) {
   return (
     <div className="w-[270px] h-[450px] relative flex items-center justify-center">
       <div
@@ -35,16 +35,16 @@ function EventItem() {
       <div className="absolute w-full h-full z-0 p-[30px]">
         <div className="bg-[#a88a4d] h-full bg-opacity-30 flex flex-col rounded-[10px] p-[20px]">
           <div className="text-[18px] futurapt text-center pb-[20px] border-b border-b-[#a88a4d]">
-            TRADITIONAL
+            {Type}
           </div>
           <div className="font-sans text-black opacity-60 text-[14px] mt-[20px] text-center">
-            Thursday, 13 Feb, 2025
+            {Date}
           </div>
           <div className="font-sans text-black opacity-60 text-[14px] text-center">
-            10:00 AM - 2:00 PM
+            {Time}
           </div>
           <div className="font-sans text-black opacity-60 text-[14px] text-center mt-[20px]">
-            123 Eastern Community Avenue, Lekki, Lagos.
+            {Venue}
           </div>
         </div>
       </div>
