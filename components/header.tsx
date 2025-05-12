@@ -60,13 +60,13 @@ export default function Header() {
       } transition-all duration-300`}
     >
       <div
-        className={`bg-black w-full p-[20px] lg:p-[30px] ${scrollTop >= screenHeight ? "bg-opacity-100":"bg-opacity-20 rounded-[10px]"} flex items-center justify-between transition-all duration-300`}
+        className={`bg-black w-full pr-8 ${scrollTop >= screenHeight ? "bg-opacity-100":"bg-opacity-70 rounded-[10px]"} flex items-center justify-between transition-all duration-300 h-[20vh]`}
       >
         <div className="greatvibes text-[20px]">
           <Image
             src={logo2}
             alt="peje"
-            className="w-[40px] h-[25px] lg:w-[80px] lg:h-[51px]"
+            className="w-[120px] lg:w-[180px]"
           />
         </div>
         <button onClick={() => setIsMenuOpen(true)} className="lg:hidden">
