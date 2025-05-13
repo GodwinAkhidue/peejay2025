@@ -8,6 +8,7 @@ import GroomsMen from "@/components/groomsmen";
 import Gift from "@/components/gift";
 import Gallery from "@/components/gallery";
 import Events from "@/components/events";
+import LoveStories from "@/components/lovestories";
 
 export default function Home() {
   const page = createRef<HTMLDivElement | null>();
@@ -17,6 +18,25 @@ export default function Home() {
       <Header />
       <HeroSection />
       <Couple />
+      <div
+        className="w-full h-[300px] lg:h-[500px]"
+        style={{
+          backgroundImage: `url(/images/heroimg1.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div className="w-full h-full text-white bg-black bg-opacity-20 flex flex-col items-center justify-center px-[20px]">
+          <div className="greatvibes text-[40px] lg:text-[100px]">
+            Our Love Stories
+          </div>
+          <div className="italic text-center text-[14px] lg:text-[24px] opacity-60 max-w-[500px] lg:max-w-[800px]">
+            The wonderful journey so far.
+          </div>
+        </div>
+      </div>
+      <LoveStories/>
       <div
         className="w-full h-[300px] lg:h-[500px]"
         style={{
