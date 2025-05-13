@@ -40,7 +40,7 @@ export default function Couple() {
             </div>
             {/*Groom Img*/}
             <div className="relative w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-full overflow-hidden flex items-center justify-center border-2 border-[#856404]">
-              <Image src={bride} alt="peje" fill className="object-fill object-center" />
+              <Image src={bride} alt="peje" fill className="object-cover object-top" />
               <div className="border-2 border-[#a88a4d] w-[90%] h-[90%] absolute z-10 rounded-full"></div>
             </div>
             <div className="greatvibes text-[40px] lg:text-[60px] text-[#a88a4d]">

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*,body{
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: greatvibes;
   src: url("../public/fonts/Great_Vibes/GreatVibes-Regular.ttf");
