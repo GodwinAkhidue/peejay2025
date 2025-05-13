@@ -62,7 +62,7 @@ export default function Header() {
       <div
         className={`bg-black w-full pr-8 ${scrollTop >= screenHeight ? "bg-opacity-100":"bg-opacity-70 rounded-[10px]"} flex items-center justify-between transition-all duration-300 h-[20vh]`}
       >
-        <div className="greatvibes text-[20px] w-[80px] lg:w-[100px] my-auto ml-6">
+        <div className="greatvibes text-[20px] w-[80px] lg:w-[100px] ml-6 h-full flex items-center mt-10">
           <Image
             src={logo2}
             alt="peje"
