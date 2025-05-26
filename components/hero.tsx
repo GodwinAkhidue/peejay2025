@@ -46,7 +46,7 @@ const HeroSlider = () => {
               style={{
                 backgroundImage: `url(${slide})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundPosition: "top",
                 height: "100vh",
               }}
             >
@@ -56,7 +56,7 @@ const HeroSlider = () => {
                   We Are Getting Married 3rd & 5th July, 2025
                 </div>
                 <div className="mt-[20px] lg:mt-[50px]">
-                  <Timer/>
+                  <Timer />
                 </div>
               </div>
             </div>

@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <LoveStories/>
+      <LoveStories />
       <div
         className="w-full h-[300px] lg:h-[500px]"
         style={{
@@ -71,8 +71,8 @@ export default function Home() {
       </div>
       <Bridesmaid />
       <Gift />
-      <Gallery/>
-      <Events/>
+      {/* <Gallery/> */}
+      <Events />
       <div
         className="w-full h-screen"
         style={{
