@@ -30,11 +30,11 @@ function Item({ i }: { i: any }) {
     <div className="bg-white w-full h-full p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
       <div className="w-full relative flex justify-center items-center">
         <div className=" w-full h-full relative rounded overflow-hidden">
-           <video autoPlay  loop id="myVideo" className="w-full h-full">
+          <video autoPlay loop id="myVideo" className="w-full h-full" playsInline preload="auto">
             <source src={i.video} type="video/mp4" />
           </video>
         </div>
-       
+
         <div className="text-[15px] w-[30px] h-[30px] bottom-[-15px] bg-white flex items-center justify-center text-[#a88a4d] absolute z-10 rounded-full">
           <BsHeartFill />
         </div>

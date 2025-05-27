@@ -10,7 +10,7 @@ export default function Couple() {
       <div className="w-full max-w-[400px] lg:max-w-[800px] flex flex-col items-center justify-center">
         {/*Prop */}
         <div className="h-[1px] w-full max-w-[400px] bg-[#a88a4d] flex items-center justify-center">
-            <RiHeart2Fill className="text-[#a88a4d] text-[24px]" />
+          <RiHeart2Fill className="text-[#a88a4d] text-[24px]" />
         </div>
 
         <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-[100px] lg:mt-[80px]">
@@ -21,7 +21,7 @@ export default function Couple() {
             </div>
             {/*Groom Img*/}
             <div className="relative w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-full overflow-hidden flex items-center justify-center border-2 border-[#856404]">
-              <Image src={groom} alt="peje" fill className="object-cover object-top" />
+              <Image src={groom} alt="peje" fill className="object-cover object-top" loading="lazy" />
               <div className="border-2 border-[#a88a4d] w-[90%] h-[90%] absolute z-10 rounded-full"></div>
             </div>
             <div className="greatvibes text-[40px] lg:text-[60px] text-[#a88a4d]">Jeffrey</div>
@@ -40,7 +40,7 @@ export default function Couple() {
             </div>
             {/*Groom Img*/}
             <div className="relative w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-full overflow-hidden flex items-center justify-center border-2 border-[#856404]">
-              <Image src={bride} alt="peje" fill className="object-cover object-top" />
+              <Image src={bride} alt="peje" fill className="object-cover object-top" loading="lazy" />
               <div className="border-2 border-[#a88a4d] w-[90%] h-[90%] absolute z-10 rounded-full"></div>
             </div>
             <div className="greatvibes text-[40px] lg:text-[60px] text-[#a88a4d]">

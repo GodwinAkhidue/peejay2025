@@ -55,18 +55,18 @@ export default function Header() {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-40 text-white ${
-        scrollTop >= screenHeight ? "p-0" : "px-[20px] lg:px-[60px] py-[20px]"
-      } transition-all duration-300`}
+      className={`fixed top-0 left-0 w-full z-40 text-white ${scrollTop >= screenHeight ? "p-0" : "px-[20px] lg:px-[60px] py-[20px]"
+        } transition-all duration-300`}
     >
       <div
-        className={`bg-black w-full pr-8 ${scrollTop >= screenHeight ? "bg-opacity-100":"bg-opacity-70 rounded-[10px]"} flex items-center justify-between transition-all duration-300 h-[20vh]`}
+        className={`bg-black w-full pr-8 ${scrollTop >= screenHeight ? "bg-opacity-100" : "bg-opacity-70 rounded-[10px]"} flex items-center justify-between transition-all duration-300 h-[20vh]`}
       >
         <div className="greatvibes text-[20px] w-[80px] lg:w-[100px] ml-6 h-full flex items-center mt-10">
           <Image
             src={logo2}
             alt="peje"
             className="w-full"
+            loading="lazy"
           />
         </div>
         <button onClick={() => setIsMenuOpen(true)} className="lg:hidden">
@@ -75,9 +75,8 @@ export default function Header() {
 
         {/*Mobile Nav Start */}
         <div
-          className={`fixed lg:static top-0 transition-all duration-300 ${
-            isMenuOpen ? "right-0" : "right-[-100vw]"
-          } bg-black lg:bg-transparent w-full lg:w-max h-[120vh] pb-[20vh] lg:pb-0 lg:h-max flex flex-col items-center justify-center`}
+          className={`fixed lg:static top-0 transition-all duration-300 ${isMenuOpen ? "right-0" : "right-[-100vw]"
+            } bg-black lg:bg-transparent w-full lg:w-max h-[120vh] pb-[20vh] lg:pb-0 lg:h-max flex flex-col items-center justify-center`}
         >
           <button
             onClick={() => setIsMenuOpen(false)}
@@ -86,7 +85,7 @@ export default function Header() {
             <IoClose className="text-[28px]" />
           </button>
           <div className="lg:hidden">
-            <Image src={logo} alt="peje" className="w-[150px] h-[102px]" />
+            <Image src={logo} alt="peje" className="w-[150px] h-[102px]" loading="lazy" />
           </div>
           <div className="flex flex-col lg:flex-row items-center mt-[70px] lg:mt-0 gap-[30px] lg:mr-[20px] font-medium futurapt">
             {navLinks.map((i, index) => (

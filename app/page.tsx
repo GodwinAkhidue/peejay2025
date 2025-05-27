@@ -23,7 +23,7 @@ export default function Home() {
         style={{
           backgroundImage: `url(/images/heroimg1.jpg)`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top",
           backgroundAttachment: "fixed",
         }}
       >
@@ -40,9 +40,9 @@ export default function Home() {
       <div
         className="w-full h-[300px] lg:h-[500px]"
         style={{
-          backgroundImage: `url(/images/heroimg1.jpg)`,
+          backgroundImage: `url(/images/heroimg2.jpg)`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top",
           backgroundAttachment: "fixed",
         }}
       >
@@ -63,7 +63,7 @@ export default function Home() {
         style={{
           backgroundImage: `url(/images/heroimg3.jpg)`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top",
           backgroundAttachment: "fixed",
         }}
       >
@@ -71,7 +71,7 @@ export default function Home() {
       </div>
       <Bridesmaid />
       <Gift />
-      {/* <Gallery/> */}
+      <Gallery />
       <Events />
       <div
         className="w-full h-screen"

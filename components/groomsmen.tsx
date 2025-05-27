@@ -87,7 +87,7 @@ function Item({ i }: { i: any }) {
     <div className="bg-white w-full h-full max-w-[300px] p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
       <div className="w-[150px] h-[150px] relative flex items-center justify-center">
         <div className=" w-full h-full relative rounded-full overflow-hidden">
-          <Image src={i.img} alt="peje" fill className="object-cover" />
+          <Image src={i.img} alt="peje" fill className="object-cover" loading="lazy" />
         </div>
         <div className="text-[15px] w-[30px] h-[30px] bottom-[-15px] bg-white flex items-center justify-center text-[#a88a4d] absolute z-10 rounded-full">
           <BsHeartFill />

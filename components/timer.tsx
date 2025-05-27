@@ -79,6 +79,7 @@ function TimerItem({ timer, value }: { timer: any; value: string }) {
         src={frame}
         alt="peje"
         className="w-[120px] h-[120px] lg:w-[180px] lg:h-[180px] frame"
+        loading="lazy"
       />
       <div className="absolute flex flex-col items-center justify-center">
         <div className="text-[30px] lg:text-[54px] futurapt font-medium leading-tight">
