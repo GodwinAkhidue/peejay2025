@@ -4,11 +4,11 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 export default function Gallery() {
   const images = [
-    "/images/Gallery/img1.JPG",
-    "/images/Gallery/img2.JPG",
-    "/images/Gallery/img3.JPG",
-    "/images/Gallery/img4.JPG",
-    "/images/Gallery/img5.JPG"
+    "/images/Gallery/img1.jpg",
+    "/images/Gallery/img2.jpg",
+    "/images/Gallery/img3.jpg",
+    "/images/Gallery/img4.jpg",
+    "/images/Gallery/img5.jpg"
   ]
 
   const openGallery = () => {
