@@ -8,7 +8,10 @@ export default function Gallery() {
     "/images/Gallery/img2.jpg",
     "/images/Gallery/img3.jpg",
     "/images/Gallery/img4.jpg",
-    "/images/Gallery/img5.jpg"
+    "/images/Gallery/img5.jpg",
+    "/images/Gallery/img6.jpg",
+    "/images/Gallery/img7.jpg",
+    "/images/Gallery/img8.jpg",
   ]
 
   const openGallery = () => {
