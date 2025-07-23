@@ -53,7 +53,7 @@ const HeroSlider = () => {
               <div className=" w-full h-full bg-black bg-opacity-10 text-white flex flex-col items-center justify-center px-[5vw] pt-[30vh]">
                 <div className="greatvibes text-[40px] lg:text-[100px] lg:leading-tight">Precious & Jeffery</div>
                 <div className="futurapt font-medium text-[18px] lg:text-[30px] mt-[20px]">
-                  We Are Getting Married 3rd & 5th July, 2025
+                  We Are Getting Married 18th & 20th September, 2025
                 </div>
                 <div className="mt-[20px] lg:mt-[50px]">
                   <Timer />

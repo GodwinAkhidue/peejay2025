@@ -19,7 +19,7 @@ export default function Timer() {
   });
 
   useEffect(() => {
-    const targetDate = new Date("2025-07-03");
+    const targetDate = new Date("2025-09-18");
 
     const calculateTimeLeft = () => {
       const difference = targetDate.getTime() - Date.now();
