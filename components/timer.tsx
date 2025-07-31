@@ -49,10 +49,6 @@ export default function Timer() {
   return (
     <div className="w-full items-center justify-center flex flex-wrap gap-x-[10px] lg:gap-x-[20px]">
       <TimerItem
-        timer={timeLeft.months}
-        value={timeLeft.months == 1 ? "Month" : "Months"}
-      />
-      <TimerItem
         timer={timeLeft.days}
         value={timeLeft.days == 1 ? "Day" : "Days"}
       />

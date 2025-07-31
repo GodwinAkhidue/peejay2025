@@ -9,6 +9,7 @@ import Gift from "@/components/gift";
 import Gallery from "@/components/gallery";
 import Events from "@/components/events";
 import LoveStories from "@/components/lovestories";
+import Image from "next/image";
 
 export default function Home() {
   const page = createRef<HTMLDivElement | null>();
@@ -17,6 +18,15 @@ export default function Home() {
     <div ref={page} className="">
       <Header />
       <HeroSection />
+      <div className="w-full px-[20px] pt-[20px] md:pt-[40px] lg:pt-[60px] bg-[#a88a4d] bg-opacity-10 flex items-center justify-center">
+        <Image
+          src={"/images/save the date copy.jpg"}
+          alt="pj25"
+          width={999}
+          height={999}
+          className="w-full max-w-[400px]"
+        />
+      </div>
       <Couple />
       <div
         className="w-full h-[300px] lg:h-[500px]"

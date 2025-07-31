@@ -4,6 +4,7 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 export default function Gallery() {
   const images = [
+    "/images/save the date copy.jpg",
     "/images/Gallery/img1.jpg",
     "/images/Gallery/img2.jpg",
     "/images/Gallery/img3.jpg",

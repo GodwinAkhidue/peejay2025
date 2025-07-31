@@ -16,7 +16,7 @@ export default function LoveStories() {
       <div className="futarapt text-[22px] lg:text-[28px] text-[#a88a4d] font-bold">
         THE PROPOSAL
       </div>
-      <div className="mt-[50px] lg:mt-[80px] grid grid-cols-1 md:grid-cols-2 place-items-center gap-[30px] ">
+      <div className="mt-[50px] lg:mt-[80px] flex items-center justify-center gap-[30px] ">
         {lovestories.map((i, index) => (
           <Item key={index} i={i} />
         ))}
@@ -27,9 +27,9 @@ export default function LoveStories() {
 
 function Item({ i }: { i: any }) {
   return (
-    <div className="bg-white w-full h-full p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
-      <div className="w-full relative flex justify-center items-center">
-        <div className=" w-full h-full relative rounded overflow-hidden">
+    <div className="bg-white w-full h-full p-[20px] lg:p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
+      <div className="relative flex justify-center items-center">
+        <div className="h-full max-h-[80vh] relative rounded overflow-hidden">
           <video autoPlay loop id="myVideo" className="w-full h-full" playsInline preload="auto">
             <source src={i.video} type="video/mp4" />
           </video>
