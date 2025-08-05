@@ -25,12 +25,6 @@ export default function GroomsMen() {
       body: " A brother who's been there through thick and thin. Loves soccer, Skilled songwriter, A decent cook, A decent photographer.",
     },
     {
-      img: img3,
-      role: "FRIEND",
-      name: "Olusakin Kehinde",
-      body: "The one that makes him love HOT BANTIS. He hated women, still shocked he's getting married.",
-    },
-    {
       img: img4,
       role: "FRIEND",
       name: "Akinseye Lucas Femi",
