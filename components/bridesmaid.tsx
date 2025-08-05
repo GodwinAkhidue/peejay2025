@@ -22,36 +22,6 @@ export default function Bridesmaid() {
       name: "Elemihe Uzoh",
       body: "She is an inspiration. She’s an amazing cook and business oriented.",
     },
-    {
-      img: img3,
-      role: "FRIEND",
-      name: "Princess Semefene",
-      body: "Great at taking photos and videos of important moments the bride might want to relive. A good dancer whose energy is contagious.",
-    },
-    {
-      img: img4,
-      role: "FRIEND",
-      name: "Patricia Ejiro",
-      body: "My friend who’s always made life brighter. She’s an amazing Cook",
-    },
-    {
-      img: img5,
-      role: "FRIEND",
-      name: "Uzoma Success",
-      body: "A constant source of support, love and amazing memories.",
-    },
-    {
-      img: img6,
-      role: "FRIEND",
-      name: "Osazuwa Peace",
-      body: "A constant source of support and love. She’s an amazing person, ultimate story teller, and a great chef.",
-    },
-    {
-      img: img7,
-      role: "FRIEND",
-      name: "Aidobhese isioma",
-      body: "She has an humble attitude and she’s so smart. She’s a  supporter and also a good chef.",
-    },
   ];
 
   return (
