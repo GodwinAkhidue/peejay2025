@@ -11,7 +11,6 @@ import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 
 export default function Bridesmaid() {
-  const [openBridesmaid1, setOpenBridesmaid1] = useState(false);
   const [openBridesmaid2, setOpenBridesmaid2] = useState(false);
   const groomsmen = [
     {
@@ -22,7 +21,7 @@ export default function Bridesmaid() {
     },
     {
       img: img3,
-      role: "Bridesmaid",
+      role: "BRIDESMAID",
       name: "Omorowa Stella",
       body: `Nickname: Stelz, 
              Relationship to the Bride: My Mentor🙌, 
@@ -32,7 +31,7 @@ export default function Bridesmaid() {
     },
     {
       img: img4,
-      role: "Bridesmaid",
+      role: "BRIDESMAID",
       name: "Ehis",
       body: `Nickname: Cocs
              Relationship to the Bride: Friend
@@ -42,7 +41,7 @@ export default function Bridesmaid() {
     },
     {
       img: img5,
-      role: "Bridal assistant",
+      role: "BRIDAL ASSISTANT",
       name: "Ogbonna Sarah Ogechi",
       body: `Nickname: Big Bird
              Relationship to the Bride: My sugar mummy ☺
@@ -61,42 +60,12 @@ export default function Bridesmaid() {
         OUR BRIDESMAID
       </div>
       <div className="mt-[50px] lg:mt-[80px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-[30px] w-max">
-        <Bridesmaid1 i={{ setOpenBridesmaid1 }} />
         <Bridesmaid2 i={{ setOpenBridesmaid2 }} />
-        <Bridesmaid1Writeup i={{ openBridesmaid1, setOpenBridesmaid1 }} />
         <Bridesmaid2Writeup i={{ openBridesmaid2, setOpenBridesmaid2 }} />
         {groomsmen.map((i, index) => (
           <Item key={index} i={i} />
         ))}
       </div>
-    </div>
-  );
-}
-
-function Bridesmaid1({ i }: { i: any }) {
-  return (
-    <div className="bg-white w-full h-full max-w-[300px] p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
-      <div className="w-[150px] h-[150px] relative flex items-center justify-center">
-        <div className=" w-full h-full relative rounded-full overflow-hidden">
-          <Image src={img1} alt="peje" fill className="object-cover" loading="lazy" />
-        </div>
-        <div className="text-[15px] w-[30px] h-[30px] bottom-[-15px] bg-white flex items-center justify-center text-[#a88a4d] absolute z-10 rounded-full">
-          <BsHeartFill />
-        </div>
-      </div>
-      <div className="futurapt font-medium">MAID OF HONOR</div>
-      <div className="text-[32px] greatvibes leading-tight text-center">
-        Benson Milliscent
-      </div>
-      <div className="text-center italic font-sans text-[#666]">
-        Precious is my heart in human form  a rare blend of grace, brilliance, and deep love...
-      </div>
-      <button
-        onClick={() => i.setOpenBridesmaid1(true)}
-        className="futarapt font-bold px-[25px] py-[10px] bg-[#a88a4d] text-white text-[14px] rounded-[10px] shadow-md hover:bg-opacity-40 transition-all duration-300"
-      >
-        READ ALL
-      </button>
     </div>
   );
 }
@@ -112,7 +81,7 @@ function Bridesmaid2({ i }: { i: any }) {
           <BsHeartFill />
         </div>
       </div>
-      <div className="futurapt font-medium">FRIEND</div>
+      <div className="futurapt font-medium">MAID OF HONOUR</div>
       <div className="text-[32px] greatvibes leading-tight text-center">
         Zainab Bah
       </div>
@@ -127,51 +96,6 @@ function Bridesmaid2({ i }: { i: any }) {
       >
         READ ALL
       </button>
-    </div>
-  );
-}
-
-function Bridesmaid1Writeup({ i }: { i: any }) {
-  return (
-    <div
-      className={`fixed top-0 left-0 w-full h-full bg-black z-50 ${i.openBridesmaid1 == true
-        ? "bg-opacity-50 visible"
-        : "bg-opacity-0 invisible"
-        } transition-all duration-500`}
-    >
-      <div
-        className={`absolute left-0 w-full h-full flex items-center justify-center ${i.openBridesmaid1 == true ? "top-0" : "top-[100vh]"
-          } transition-all duration-500 px-[20px]`}
-      >
-        <div className="bg-white rounded-[10px] w-full max-w-[300px] shadow-md overflow-hidden">
-          <div className="bg-[#a88a4d] bg-opacity-20 p-[40px] w-full flex flex-col items-center justify-center relative">
-            <button
-              onClick={() => i.setOpenBridesmaid1(false)}
-              className="absolute top-[20px] right-[20px]"
-            >
-              <IoClose className="text-[24px] lg:text-[28px]" />
-            </button>
-            <div className="w-[150px] h-[150px] relative flex items-center justify-center">
-              <div className=" w-full h-full relative rounded-full overflow-hidden">
-                <Image src={img1} alt="peje" fill className="object-cover" loading="lazy" />
-              </div>
-              <div className="text-[15px] w-[30px] h-[30px] bottom-[-15px] bg-[#eee8da] flex items-center justify-center text-[#a88a4d] absolute z-10 rounded-full">
-                <BsHeartFill />
-              </div>
-            </div>
-            <div className="futurapt font-medium mt-[20px]">MAID OF HONOR</div>
-            <div className="text-[32px] greatvibes leading-tight text-center mt-[20px]">
-              Benson Milliscent
-            </div>
-            <div className="text-center italic font-sans text-[#666] overflow-y-scroll h-[230px] mt-[10px]">
-              Precious is my heart in human form  a rare blend of grace, brilliance, and deep love. She's selfless, faith-driven, and radiates light wherever she goes. Her energy lifts rooms, and her mind challenges mine in the best way. She’s wise, humble, fiercely loyal, and always speaks the truth with love. Through every season, she’s been my biggest cheerleader, therapist, and sister. Simply put, she’s extraordinary the kind of friend who makes life richer and brighter just by being in it.
-
-              Fun Fact: She’s a creative cook, expert gift-giver, natural therapist, and passionate about giving back.
-
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
