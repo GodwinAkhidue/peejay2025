@@ -1,11 +1,9 @@
 "use client";
 import img1 from "@/public/images/Bridesmaid/Benson Milliscent.jpeg";
 import img2 from "@/public/images/Bridesmaid/Elemihe Uzoh.jpg";
-import img3 from "@/public/images/Bridesmaid/Princess Semefene.jpg";
-import img4 from "@/public/images/Bridesmaid/Patricia Ejiro.jpg";
-import img5 from "@/public/images/Bridesmaid/Uzoma Success.jpg";
-import img6 from "@/public/images/Bridesmaid/Osazuwa Peace.jpg";
-import img7 from "@/public/images/Bridesmaid/Aidobhese isioma.jpg";
+import img3 from "@/public/images/Bridesmaid/Omorowa Stella.jpg";
+import img4 from "@/public/images/Bridesmaid/Ehis.jpg";
+import img5 from "@/public/images/Bridesmaid/Ogbonna Sarah Ogechi.jpg";
 import img8 from "@/public/images/Bridesmaid/Zainab Bah.jpg";
 import Image from "next/image";
 import { BsHeartFill } from "react-icons/bs";
@@ -21,6 +19,36 @@ export default function Bridesmaid() {
       role: "FRIEND",
       name: "Elemihe Uzoh",
       body: "She is an inspiration. She’s an amazing cook and business oriented.",
+    },
+    {
+      img: img3,
+      role: "Bridesmaid",
+      name: "Omorowa Stella",
+      body: `Nickname: Stelz, 
+             Relationship to the Bride: My Mentor🙌, 
+             Special Qualities: Making people happy, 
+             Fun fact: my stomach doesn’t get full😂, 
+             Contact info : 08135133079, 07054693177`,
+    },
+    {
+      img: img4,
+      role: "Bridesmaid",
+      name: "Ehis",
+      body: `Nickname: Cocs
+             Relationship to the Bride: Friend
+             Special qualities: Sweetness
+             Fun fact: Idk lol
+             Contact : 08156999739`,
+    },
+    {
+      img: img5,
+      role: "Bridal assistant",
+      name: "Ogbonna Sarah Ogechi",
+      body: `Nickname: Big Bird
+             Relationship to the Bride: My sugar mummy ☺
+             Special Qualities: People say I’m a genius and I agree 
+             Fun fact: I’m adventurous ☺
+             Contact info : (instagram, TikTok, YouTube) thesarahogbonna ( email) ogbonnasarah8@gmail.com (contact) 09067862224`,
     },
   ];
 
