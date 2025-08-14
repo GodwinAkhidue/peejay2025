@@ -13,6 +13,7 @@ export default function Gallery() {
     "/images/Gallery/img6.jpg",
     "/images/Gallery/img7.jpg",
     "/images/Gallery/img8.jpg",
+    "/images/Gallery/img9.jpg",
   ]
 
   const openGallery = () => {
