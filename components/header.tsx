@@ -59,13 +59,15 @@ export default function Header() {
         } transition-all duration-300`}
     >
       <div
-        className={`bg-black w-full pr-8 ${scrollTop >= screenHeight ? "bg-opacity-100" : "bg-opacity-70 rounded-[10px]"} flex items-center justify-between transition-all duration-300 h-[20vh]`}
+        className={`bg-black w-full p-[20px] ${scrollTop >= screenHeight ? "bg-opacity-100" : "bg-opacity-70 rounded-[10px]"} flex items-center justify-between transition-all duration-300`}
       >
-        <div className="greatvibes text-[20px] w-[80px] lg:w-[100px] ml-6 h-full flex items-center mt-10">
+        <div className="greatvibes flex items-center">
           <Image
             src={logo2}
             alt="peje"
-            className="w-full"
+            width={999}
+            height={999}
+            className="w-[70px] lg:w-[100px]"
             loading="lazy"
           />
         </div>
@@ -85,7 +87,7 @@ export default function Header() {
             <IoClose className="text-[28px]" />
           </button>
           <div className="lg:hidden">
-            <Image src={logo} alt="peje" className="w-[150px] h-[102px]" loading="lazy" />
+            <Image src={logo} alt="peje" width={999} height={999} className="w-[150px]" loading="lazy" />
           </div>
           <div className="flex flex-col lg:flex-row items-center mt-[70px] lg:mt-0 gap-[30px] lg:mr-[20px] font-medium futurapt">
             {navLinks.map((i, index) => (
