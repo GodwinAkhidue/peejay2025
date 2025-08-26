@@ -15,7 +15,7 @@ export default function Events() {
       <div className="mt-[70px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
         <EventItem Date={"Thursday, 18th September, 2025"} Type={"TRADITIONAL"} Time={"10:00 AM"} Venue={"1 Darlington avenue, off Nneka Street 1st Ugbor, Benin City, Edo State."} />
         <EventItem Date={"Saturday, 20th September, 2025"} Type={"CHURCH"} Time={"10:00 AM"} Venue={"St Joseph Catholic Church, First East Circular Road, Benin City, Edo State."} />
-        <EventItem Date={"Saturday, 20th September, 2025"} Type={"WHITE WEDDING"} Time={""} Venue={"2 Commercial Ave, off Ikpokpan Road, GRA, Gloria Gardens, Benin City, Edo State."} />
+        <EventItem Date={"Saturday, 20th September, 2025"} Type={"WHITE WEDDING"} Time={""} Venue={"2 Commercial Ave, off Ikpokpan Road, GRA, Gloria Gardens, Benin City, Edo State. STRICTLY BY INVITATION."} />
         {/* <EventItem /> */}
       </div>
     </div>
