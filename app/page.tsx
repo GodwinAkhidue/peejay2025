@@ -18,15 +18,6 @@ export default function Home() {
     <div ref={page} className="">
       <Header />
       <HeroSection />
-      <div className="w-full px-[20px] pt-[20px] md:pt-[40px] lg:pt-[60px] bg-[#a88a4d] bg-opacity-10 flex items-center justify-center">
-        <Image
-          src={"/images/save the date copy.jpg"}
-          alt="pj25"
-          width={999}
-          height={999}
-          className="w-full max-w-[400px]"
-        />
-      </div>
       <Couple />
       <div
         className="w-full h-[300px] lg:h-[500px]"
@@ -81,7 +72,7 @@ export default function Home() {
       </div>
       <Bridesmaid />
       <Gift />
-      <Gallery />
+      {/* <Gallery /> */}
       <Events />
       <div
         className="w-full h-screen"
