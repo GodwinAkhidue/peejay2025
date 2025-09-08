@@ -67,7 +67,7 @@ export default function Header() {
             alt="peje"
             width={999}
             height={999}
-            className="w-[70px] lg:w-[100px]"
+            className="w-[70px] lg:w-[80px]"
             loading="lazy"
           />
         </div>

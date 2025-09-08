@@ -11,7 +11,6 @@ export default function LoveStories() {
     "/images/Gallery/img2.jpg",
     "/images/Gallery/img9.jpg",
     "/images/Gallery/img1.jpg",
-    "/images/Gallery/img3.jpg",
     "/images/Gallery/img5.jpg",
     "/images/Gallery/img6.jpg",
     "/images/Gallery/img8.jpg",
@@ -123,9 +122,9 @@ export default function LoveStories() {
           he was transferred to Uniport, and distance tested us. But love that is divinely
           sealed cannot be undone. Long distance only deepened what heaven had already ordained.
         </div>
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-[30px] mt-[20px] lg:mt-[30px]">
+        <div className="columns-1 md:columns-2 gap-[30px] mt-[20px] lg:mt-[30px]">
           {images && images.length > 0 &&
-            images.slice(4, 7).map((i: any, index: any) => (
+            images.slice(4, 6).map((i: any, index: any) => (
               <div key={index} className="w-full max-w-[400px] relative group">
                 <button
                   onClick={() => openGallery()}
@@ -149,7 +148,7 @@ export default function LoveStories() {
         </div>
         <div className="columns-1 md:columns-2 gap-[30px] mt-[20px] lg:mt-[30px]">
           {images && images.length > 0 &&
-            images.slice(7, 9).map((i: any, index: any) => (
+            images.slice(6, 8).map((i: any, index: any) => (
               <div key={index} className="w-full max-w-[400px] relative group">
                 <button
                   onClick={() => openGallery()}
@@ -194,7 +193,7 @@ export default function LoveStories() {
       <div className="futarapt text-[22px] lg:text-[28px] text-[#a88a4d] font-bold">
         THE PROPOSAL
       </div>
-      <div className="mt-[50px] lg:mt-[80px] flex items-center justify-center gap-[30px] ">
+      <div className="mt-[50px] lg:mt-[80px] flex items-center justify-center gap-[30px] w-full">
         {lovestories.map((i, index) => (
           <Item key={index} i={i} />
         ))}
@@ -205,12 +204,19 @@ export default function LoveStories() {
 
 function Item({ i }: { i: any }) {
   return (
-    <div className="bg-white w-full h-full p-[20px] lg:p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
-      <div className="relative flex justify-center items-center">
-        <div className="h-full max-h-[80vh] relative rounded overflow-hidden">
-          <video autoPlay loop id="myVideo" className="w-full h-full" playsInline preload="auto">
-            <source src={i.video} type="video/mp4" />
-          </video>
+    <div className="bg-white w-full max-w-[1000px] h-full p-[20px] lg:p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
+      <div className="relative flex justify-center items-center w-full">
+        <div className="w-full h-[45vw] max-h-[520px] relative rounded-[10px] overflow-hidden">
+          <div
+            style={{ padding: "56.25% 0 0 0", position: "relative" }}
+          >
+            <iframe
+              src="https://player.vimeo.com/video/1116912686?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1"
+              frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+              referrerPolicy="strict-origin-when-cross-origin" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+              title="proposalvideo"></iframe>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
 
         <div className="text-[15px] w-[30px] h-[30px] bottom-[-15px] bg-white flex items-center justify-center text-[#a88a4d] absolute z-10 rounded-full">
