@@ -7,14 +7,14 @@ export default function Events() {
       id="events"
       className="flex flex-col items-center justify-center py-[80px] lg:py-[160px] px-[20px] bg-[#a88a4d] bg-opacity-10"
     >
-      <div className="futarapt text-[22px] lg:text-[28px] text-[#a88a4d] font-bold">
+      <div data-aos="fade-down" className="futarapt text-[22px] lg:text-[28px] text-[#a88a4d] font-bold">
         EVENTS
       </div>
       <div className="h-[1px] w-full max-w-[400px] bg-[#a88a4d] flex items-center justify-center mt-[50px] lg:mt-[80px]">
         <RiHeart2Fill className="text-[#a88a4d] text-[24px]" />
       </div>
       <div className="mt-[70px] grid grid-cols-1 gap-[30px]">
-        <Image alt="peje" src={`/images/trad.jpg`} width={999} height={999} className="w-full max-w-[350px]" />
+        <Image data-aos="flip-left" alt="peje" src={`/images/trad.jpg`} width={999} height={999} className="w-full max-w-[350px]" />
         {/* <EventItem Date={"Saturday, 20th September, 2025"} Type={"CHURCH"} Time={"10:00 AM"} Venue={"St Joseph Catholic Church, First East Circular Road, Benin City, Edo State."} /> */}
       </div>
     </div>

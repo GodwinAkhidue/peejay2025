@@ -56,7 +56,7 @@ export default function Bridesmaid() {
       id="bridesmaid"
       className="flex flex-col items-center justify-center py-[80px] lg:py-[160px] px-[20px] bg-[#a88a4d] bg-opacity-10"
     >
-      <div className="futarapt text-[22px] lg:text-[28px] text-[#a88a4d] font-bold">
+      <div data-aos="fade-down" className="futarapt text-[22px] lg:text-[28px] text-[#a88a4d] font-bold">
         OUR BRIDESMAID
       </div>
       <div className="mt-[50px] lg:mt-[80px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-[30px] w-max">
@@ -72,7 +72,7 @@ export default function Bridesmaid() {
 
 function Bridesmaid2({ i }: { i: any }) {
   return (
-    <div className="bg-white w-full h-full max-w-[300px] p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
+    <div data-aos="flip-left" className="bg-white w-full h-full max-w-[300px] p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
       <div className="w-[150px] h-[150px] relative flex items-center justify-center">
         <div className=" w-full h-full relative rounded-full overflow-hidden">
           <Image src={img8} alt="peje" fill className="object-cover" loading="lazy" />
@@ -150,7 +150,7 @@ function Bridesmaid2Writeup({ i }: { i: any }) {
 
 function Item({ i }: { i: any }) {
   return (
-    <div className="bg-white w-full h-full max-w-[300px] p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
+    <div data-aos="flip-left" className="bg-white w-full h-full max-w-[300px] p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
       <div className="w-[150px] h-[150px] relative flex items-center justify-center">
         <div className=" w-full h-full relative rounded-full overflow-hidden">
           <Image src={i.img} alt="peje" fill className="object-cover" loading="lazy" />

@@ -15,7 +15,7 @@ export default function Couple() {
 
         <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-[100px] lg:mt-[80px]">
           {/*Groom */}
-          <div className="flex items-center flex-col gap-[20px] mt-[50px] lg:mt-0">
+          <div data-aos="fade-right" className="flex items-center flex-col gap-[20px] mt-[50px] lg:mt-0">
             <div className="futarapt text-[22px] lg:text-[28px] text-[#a88a4d] font-bold">
               THE GROOM
             </div>
@@ -28,13 +28,13 @@ export default function Couple() {
           </div>
 
           {/*Heart */}
-          <div className="mt-[30px] w-[42px] h-[42px] relative flex items-center justify-center">
+          <div data-aos="zoom-in" className="mt-[30px] w-[42px] h-[42px] relative flex items-center justify-center">
             <IoIosHeart className="text-[42px] lg:text-[64px] animate-ping text-[#a88a4d]" />
             <IoIosHeart className="text-[42px] lg:text-[64px] absolute text-[#a88a4d]" />
           </div>
 
           {/*Bride */}
-          <div className="flex items-center flex-col-reverse lg:flex-col gap-[20px] mt-[30px] lg:mt-0">
+          <div data-aos="fade-left" className="flex items-center flex-col-reverse lg:flex-col gap-[20px] mt-[30px] lg:mt-0">
             <div className="futarapt text-[22px] lg:text-[28px] text-[#a88a4d] font-bold">
               THE BRIDE
             </div>

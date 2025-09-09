@@ -1,9 +1,17 @@
+"use client"
 import { BsHeartFill } from "react-icons/bs";
 import { MdFullscreen } from "react-icons/md";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import { useEffect, useState } from "react";
 
 export default function LoveStories() {
+
+  const [hasLoaded, setHasLoaded] = useState(false);
+
+  useEffect(() => {
+    setHasLoaded(true);
+  }, [])
 
   const images = [
     "/images/Gallery/bride.jpg",
@@ -32,23 +40,16 @@ export default function LoveStories() {
     );
   };
 
-  const lovestories = [
-    {
-      video: '/images/Lovestories/proposalvideo.mp4',
-      type: "the proposal video",
-    },
-  ];
-
   return (
     <div className="flex flex-col items-center justify-center py-[80px] lg:py-[160px] px-[20px] bg-[#a88a4d] bg-opacity-10 w-full h-full">
       <div className="mb-[80px] lg:mb-[160px] flex flex-col items-center justify-center">
-        <div className="futarapt text-[22px] lg:text-[28px] text-[#a88a4d] font-bold lg:leading-tight">
+        <div data-aos="zoom-in" className="futarapt text-[22px] lg:text-[28px] text-[#a88a4d] font-bold lg:leading-tight">
           OUR LOVE STORY
         </div>
-        <div className="text-center italic mt-[10px] lg:mt-[20px] lg:text-[20px]">
+        <div data-aos="zoom-in" className="text-center italic mt-[10px] lg:mt-[20px] lg:text-[20px]">
           Our love story began in the most unexpected of ways, yet it was divinely orchestrated—written long before we ever knew.
         </div>
-        <div className="mt-[20px] lg:mt-[30px] w-full flex justify-center">
+        <div data-aos="flip-left" className="mt-[20px] lg:mt-[30px] w-full flex justify-center">
           <div className="w-full max-w-[400px] h-max relative group">
             <button
               onClick={() => openGallery()}
@@ -64,7 +65,7 @@ export default function LoveStories() {
             />
           </div>
         </div>
-        <div className="text-center italic mt-[20px] lg:mt-[30px] lg:text-[20px]">
+        <div data-aos="zoom-in" className="text-center italic mt-[20px] lg:mt-[30px] lg:text-[20px]">
           We first crossed paths in late 2021. He had come to my school for a program,
           carrying the weight of anointing and grace as a Pastor sent to bless us. I was
           serving as the welfare lead, not knowing destiny was quietly weaving its threads.
@@ -73,7 +74,7 @@ export default function LoveStories() {
           I listened, I questioned, and he answered—planting seeds that would later bloom.
           Two days later, he returned to his chapter, and life carried us on separate paths.
         </div>
-        <div className="mt-[20px] lg:mt-[30px] w-full flex justify-center">
+        <div data-aos="flip-left" className="mt-[20px] lg:mt-[30px] w-full flex justify-center">
           <div className="w-full max-w-[400px] h-max relative group">
             <button
               onClick={() => openGallery()}
@@ -89,7 +90,7 @@ export default function LoveStories() {
             />
           </div>
         </div>
-        <div className="text-center italic mt-[20px] lg:mt-[30px] lg:text-[20px]">
+        <div data-aos="zoom-in" className="text-center italic mt-[20px] lg:mt-[30px] lg:text-[20px]">
           But destiny never forgets its own. In mid–2023, our worlds aligned again
           through a mutual connection. We began to work together, and in no time, our
           schedules intertwined. Between church activities and business pursuits,
@@ -100,7 +101,7 @@ export default function LoveStories() {
         <div className="columns-1 md:columns-2 gap-[30px] mt-[20px] lg:mt-[30px]">
           {images && images.length > 0 &&
             images.slice(2, 4).map((i: any, index: any) => (
-              <div key={index} className="w-full max-w-[400px] relative group">
+              <div data-aos="flip-left" key={index} className="w-full max-w-[400px] relative group">
                 <button
                   onClick={() => openGallery()}
                   className="w-full h-full absolute top-0 left-0 invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-[#00000080] transition-all duration-300 flex items-center justify-center text-white text-[60px] lg:text-[96px]"
@@ -116,7 +117,7 @@ export default function LoveStories() {
               </div>
             ))}
         </div>
-        <div className="text-center italic mt-[20px] lg:mt-[30px] lg:text-[20px]">
+        <div data-aos="zoom-in" className="text-center italic mt-[20px] lg:mt-[30px] lg:text-[20px]">
           By November of that year, love took its rightful seat. He looked at me and
           said with certainty, “I am going to marry you. So know it now.” Not long after,
           he was transferred to Uniport, and distance tested us. But love that is divinely
@@ -125,7 +126,7 @@ export default function LoveStories() {
         <div className="columns-1 md:columns-2 gap-[30px] mt-[20px] lg:mt-[30px]">
           {images && images.length > 0 &&
             images.slice(4, 6).map((i: any, index: any) => (
-              <div key={index} className="w-full max-w-[400px] relative group">
+              <div data-aos="flip-left" key={index} className="w-full max-w-[400px] relative group">
                 <button
                   onClick={() => openGallery()}
                   className="w-full h-full absolute top-0 left-0 invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-[#00000080] transition-all duration-300 flex items-center justify-center text-white text-[60px] lg:text-[96px]"
@@ -141,7 +142,7 @@ export default function LoveStories() {
               </div>
             ))}
         </div>
-        <div className="text-center italic mt-[20px] lg:mt-[30px] lg:text-[20px]">
+        <div data-aos="zoom-in" className="text-center italic mt-[20px] lg:mt-[30px] lg:text-[20px]">
           And so, days rolled into months, and our love only strengthened. We became
           engaged, and now here in 2025, forever stands before us—no longer a promise,
           but a covenant about to be lived.
@@ -149,7 +150,7 @@ export default function LoveStories() {
         <div className="columns-1 md:columns-2 gap-[30px] mt-[20px] lg:mt-[30px]">
           {images && images.length > 0 &&
             images.slice(6, 8).map((i: any, index: any) => (
-              <div key={index} className="w-full max-w-[400px] relative group">
+              <div data-aos="flip-left" key={index} className="w-full max-w-[400px] relative group">
                 <button
                   onClick={() => openGallery()}
                   className="w-full h-full absolute top-0 left-0 invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-[#00000080] transition-all duration-300 flex items-center justify-center text-white text-[60px] lg:text-[96px]"
@@ -165,7 +166,7 @@ export default function LoveStories() {
               </div>
             ))}
         </div>
-        <div className="text-center italic mt-[20px] lg:mt-[30px] lg:text-[20px]">
+        <div data-aos="zoom-in" className="text-center italic mt-[20px] lg:mt-[30px] lg:text-[20px]">
           What began as a meeting in service has become the love of a lifetime. Written, sealed, and now revealed.
           What was once a promise now rises as a covenant. What heaven wrote, earth now witnesses.
           And so, our forever begins—majestic, unshaken, and sealed in love eternal.
@@ -173,7 +174,7 @@ export default function LoveStories() {
         <div className="columns-1 gap-[30px] mt-[20px] lg:mt-[30px]">
           {images && images.length > 0 &&
             images.slice(9, 10).map((i: any, index: any) => (
-              <div key={index} className="w-full max-w-[400px] relative group">
+              <div data-aos="flip-left" key={index} className="w-full max-w-[400px] relative group">
                 <button
                   onClick={() => openGallery()}
                   className="w-full h-full absolute top-0 left-0 invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-[#00000080] transition-all duration-300 flex items-center justify-center text-white text-[60px] lg:text-[96px]"
@@ -190,21 +191,21 @@ export default function LoveStories() {
             ))}
         </div>
       </div>
-      <div className="futarapt text-[22px] lg:text-[28px] text-[#a88a4d] font-bold">
+      <div data-aos="zoom-in" className="futarapt text-[22px] lg:text-[28px] text-[#a88a4d] font-bold">
         THE PROPOSAL
       </div>
       <div className="mt-[50px] lg:mt-[80px] flex items-center justify-center gap-[30px] w-full">
-        {lovestories.map((i, index) => (
-          <Item key={index} i={i} />
-        ))}
+        {
+          hasLoaded && <Item />
+        }
       </div>
     </div>
   );
 }
 
-function Item({ i }: { i: any }) {
+function Item() {
   return (
-    <div className="bg-white w-full max-w-[1000px] h-full p-[20px] lg:p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
+    <div data-aos="flip-left" className="bg-white w-full max-w-[1000px] h-full p-[20px] lg:p-[40px] flex flex-col gap-[20px] items-center justify-center shadow-md rounded-[10px]">
       <div className="relative flex justify-center items-center w-full">
         <div className="w-full h-[45vw] max-h-[520px] relative rounded-[10px] overflow-hidden">
           <div
@@ -224,7 +225,7 @@ function Item({ i }: { i: any }) {
         </div>
       </div>
       {/* <div className="futurapt font-medium">{i.type}</div> */}
-      <div className="text-[32px] greatvibes leading-tight text-center">{i.type}</div>
+      <div className="text-[32px] greatvibes leading-tight text-center">the proposal video</div>
       {/* <div className="text-center italic font-sans text-[#666]">{i.body}</div> */}
     </div>
   );

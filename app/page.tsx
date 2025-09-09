@@ -1,7 +1,7 @@
 "use client";
 import Header from "@/components/header";
 import HeroSection from "@/components/hero";
-import { createRef } from "react";
+import { createRef, useEffect } from "react";
 import Couple from "@/components/couple";
 import Bridesmaid from "@/components/bridesmaid";
 import GroomsMen from "@/components/groomsmen";
@@ -10,9 +10,17 @@ import Gallery from "@/components/gallery";
 import Events from "@/components/events";
 import LoveStories from "@/components/lovestories";
 import Image from "next/image";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 export default function Home() {
   const page = createRef<HTMLDivElement | null>();
+
+  useEffect(() => {
+    AOS.init({
+      once: true
+    });
+  }, [])
 
   return (
     <div ref={page} className="">
