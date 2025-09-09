@@ -6,10 +6,8 @@ import Couple from "@/components/couple";
 import Bridesmaid from "@/components/bridesmaid";
 import GroomsMen from "@/components/groomsmen";
 import Gift from "@/components/gift";
-import Gallery from "@/components/gallery";
 import Events from "@/components/events";
 import LoveStories from "@/components/lovestories";
-import Image from "next/image";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
@@ -18,8 +16,10 @@ export default function Home() {
 
   useEffect(() => {
     AOS.init({
-      once: true
+      once: true,
+      duration: 600
     });
+    AOS.refresh();
   }, [])
 
   return (
