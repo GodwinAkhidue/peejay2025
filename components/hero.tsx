@@ -56,7 +56,7 @@ const HeroSlider = () => {
                   We Are Getting Married 18th & 20th September, 2025
                 </div>
                 <div className="mt-[20px] lg:mt-[50px]">
-                  <Timer />
+                  {/* <Timer /> */}
                 </div>
               </div>
             </div>

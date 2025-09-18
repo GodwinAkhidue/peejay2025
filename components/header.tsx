@@ -46,10 +46,10 @@ export default function Header() {
   const navLinks = [
     { name: "HOME", url: "/" },
     { name: "COUPLE", url: "/#couple" },
+    { name: "GALLERY", url: "/#gallery" },
     { name: "GROOMSMEN", url: "/#groomsmen" },
     { name: "BRIDESMAID", url: "/#bridesmaid" },
     { name: "GIFT", url: "/#gift" },
-    { name: "GALLERY", url: "/#gallery" },
     { name: "EVENTS", url: "/#events" },
   ];
 

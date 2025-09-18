@@ -25,7 +25,7 @@ export default function LoveStories() {
     "/images/save the date copy.jpg",
   ]
 
-  const openGallery = () => {
+  const openGallery = (i: number) => {
     Fancybox.show(
       images.map((item) => ({
         src: item,
@@ -36,6 +36,7 @@ export default function LoveStories() {
         Carousel: {
           infinite: false,
         },
+        startIndex: i
       }
     );
   };
@@ -52,7 +53,7 @@ export default function LoveStories() {
         <div data-aos="flip-left" className="mt-[20px] lg:mt-[30px] w-full flex justify-center">
           <div className="w-full max-w-[400px] h-max relative group">
             <button
-              onClick={() => openGallery()}
+              onClick={() => openGallery(0)}
               className="w-full h-full absolute top-0 left-0 invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-[#00000080] transition-all duration-300 flex items-center justify-center text-white text-[60px] lg:text-[96px]"
             >
               <MdFullscreen />
@@ -77,7 +78,7 @@ export default function LoveStories() {
         <div data-aos="flip-left" className="mt-[20px] lg:mt-[30px] w-full flex justify-center">
           <div className="w-full max-w-[400px] h-max relative group">
             <button
-              onClick={() => openGallery()}
+              onClick={() => openGallery(1)}
               className="w-full h-full absolute top-0 left-0 invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-[#00000080] transition-all duration-300 flex items-center justify-center text-white text-[60px] lg:text-[96px]"
             >
               <MdFullscreen />
@@ -103,7 +104,7 @@ export default function LoveStories() {
             images.slice(2, 4).map((i: any, index: any) => (
               <div data-aos="flip-left" key={index} className="w-full max-w-[400px] relative group">
                 <button
-                  onClick={() => openGallery()}
+                  onClick={() => openGallery(2 + index)}
                   className="w-full h-full absolute top-0 left-0 invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-[#00000080] transition-all duration-300 flex items-center justify-center text-white text-[60px] lg:text-[96px]"
                 >
                   <MdFullscreen />
@@ -128,7 +129,7 @@ export default function LoveStories() {
             images.slice(4, 6).map((i: any, index: any) => (
               <div data-aos="flip-left" key={index} className="w-full max-w-[400px] relative group">
                 <button
-                  onClick={() => openGallery()}
+                  onClick={() => openGallery(4 + index)}
                   className="w-full h-full absolute top-0 left-0 invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-[#00000080] transition-all duration-300 flex items-center justify-center text-white text-[60px] lg:text-[96px]"
                 >
                   <MdFullscreen />
@@ -152,7 +153,7 @@ export default function LoveStories() {
             images.slice(6, 8).map((i: any, index: any) => (
               <div data-aos="flip-left" key={index} className="w-full max-w-[400px] relative group">
                 <button
-                  onClick={() => openGallery()}
+                  onClick={() => openGallery(6 + index)}
                   className="w-full h-full absolute top-0 left-0 invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-[#00000080] transition-all duration-300 flex items-center justify-center text-white text-[60px] lg:text-[96px]"
                 >
                   <MdFullscreen />
@@ -176,7 +177,7 @@ export default function LoveStories() {
             images.slice(9, 10).map((i: any, index: any) => (
               <div data-aos="flip-left" key={index} className="w-full max-w-[400px] relative group">
                 <button
-                  onClick={() => openGallery()}
+                  onClick={() => openGallery(9 + index)}
                   className="w-full h-full absolute top-0 left-0 invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-[#00000080] transition-all duration-300 flex items-center justify-center text-white text-[60px] lg:text-[96px]"
                 >
                   <MdFullscreen />

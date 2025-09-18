@@ -9,6 +9,7 @@ import Gift from "@/components/gift";
 import Events from "@/components/events";
 import LoveStories from "@/components/lovestories";
 import AOS from "aos";
+import Gallery from "@/components/gallery";
 import 'aos/dist/aos.css';
 
 export default function Home() {
@@ -49,6 +50,26 @@ export default function Home() {
       <div
         className="w-full h-[300px] lg:h-[500px]"
         style={{
+          backgroundImage: `url(/images/lens.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div className="w-full h-full text-white bg-black bg-opacity-20 flex flex-col items-center justify-center px-[20px]">
+          <div className="greatvibes text-[40px] lg:text-[100px]">
+            Shared Moments
+          </div>
+          <div className="italic text-center text-[14px] lg:text-[24px] opacity-60 max-w-[500px] lg:max-w-[800px]">
+            Upload your favorite snapshots and be part of our gallery.
+            Let us relive the day through your lens.
+          </div>
+        </div>
+      </div>
+      <Gallery />
+      <div
+        className="w-full h-[300px] lg:h-[500px]"
+        style={{
           backgroundImage: `url(/images/heroimg2.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "top",
@@ -80,7 +101,6 @@ export default function Home() {
       </div>
       <Bridesmaid />
       <Gift />
-      {/* <Gallery /> */}
       <Events />
       <div
         className="w-full h-screen"
