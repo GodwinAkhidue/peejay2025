@@ -9,7 +9,6 @@ import Gift from "@/components/gift";
 import Events from "@/components/events";
 import LoveStories from "@/components/lovestories";
 import AOS from "aos";
-import Gallery from "@/components/gallery";
 import 'aos/dist/aos.css';
 
 export default function Home() {
@@ -47,7 +46,7 @@ export default function Home() {
         </div>
       </div>
       <LoveStories />
-      <div
+      {/* <div
         className="w-full h-[300px] lg:h-[500px]"
         style={{
           backgroundImage: `url(/images/lens.jpg)`,
@@ -65,8 +64,7 @@ export default function Home() {
             Let us relive the day through your lens.
           </div>
         </div>
-      </div>
-      <Gallery />
+      </div> */}
       <div
         className="w-full h-[300px] lg:h-[500px]"
         style={{
